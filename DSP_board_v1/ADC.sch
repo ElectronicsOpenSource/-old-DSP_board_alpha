@@ -1,0 +1,227 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OSPESA
+LIBS:grau
+LIBS:DSP_v1-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 5 5
+Title "EDM FPGA Ramp Generator "
+Date "9 feb 2015"
+Rev "1"
+Comp "JILA"
+Comment1 "Matt Grau"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C24
+U 1 1 54D1AA5D
+P 4100 3450
+AR Path="/54D68586/54D1AA5D" Ref="C24"  Part="1" 
+AR Path="/54D67EDE/54D1AA5D" Ref="C26"  Part="1" 
+F 0 "C26" H 4100 3550 40  0000 L CNN
+F 1 "100n" H 4106 3365 40  0000 L CNN
+F 2 "SM0603_Capa" H 4138 3300 30  0001 C CNN
+F 3 "~" H 4100 3450 60  0000 C CNN
+	1    4100 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR054
+U 1 1 54D1AA5F
+P 4450 3600
+AR Path="/54D68586/54D1AA5F" Ref="#PWR054"  Part="1" 
+AR Path="/54D67EDE/54D1AA5F" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 4450 3600 30  0001 C CNN
+F 1 "GND" H 4450 3530 30  0001 C CNN
+F 2 "" H 4450 3600 60  0000 C CNN
+F 3 "" H 4450 3600 60  0000 C CNN
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C25
+U 1 1 54D1AA60
+P 4800 3450
+AR Path="/54D68586/54D1AA60" Ref="C25"  Part="1" 
+AR Path="/54D67EDE/54D1AA60" Ref="C27"  Part="1" 
+F 0 "C27" H 4800 3550 40  0000 L CNN
+F 1 "100n" H 4806 3365 40  0000 L CNN
+F 2 "SM0603_Capa" H 4838 3300 30  0001 C CNN
+F 3 "~" H 4800 3450 60  0000 C CNN
+	1    4800 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AD7685 U9
+U 1 1 54D1AA61
+P 4450 4250
+AR Path="/54D68586/54D1AA61" Ref="U9"  Part="1" 
+AR Path="/54D67EDE/54D1AA61" Ref="U10"  Part="1" 
+F 0 "U10" H 4450 4350 70  0000 C CNN
+F 1 "AD7685" H 4450 4151 70  0000 C CNN
+F 2 "TO92" H 4450 4250 60  0001 C CNN
+F 3 "~" H 4450 4250 60  0000 C CNN
+	1    4450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR055
+U 1 1 54D1AA62
+P 3200 3350
+AR Path="/54D68586/54D1AA62" Ref="#PWR055"  Part="1" 
+AR Path="/54D67EDE/54D1AA62" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 3200 3310 30  0001 C CNN
+F 1 "+3.3V" H 3200 3460 30  0000 C CNN
+F 2 "" H 3200 3350 60  0000 C CNN
+F 3 "" H 3200 3350 60  0000 C CNN
+	1    3200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR056
+U 1 1 54D1AA63
+P 5500 4100
+AR Path="/54D68586/54D1AA63" Ref="#PWR056"  Part="1" 
+AR Path="/54D67EDE/54D1AA63" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 5500 4100 30  0001 C CNN
+F 1 "GND" H 5500 4030 30  0001 C CNN
+F 2 "" H 5500 4100 60  0000 C CNN
+F 3 "" H 5500 4100 60  0000 C CNN
+	1    5500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR057
+U 1 1 54D1AA90
+P 6250 5350
+AR Path="/54D68586/54D1AA90" Ref="#PWR057"  Part="1" 
+AR Path="/54D67EDE/54D1AA90" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 6250 5350 30  0001 C CNN
+F 1 "GND" H 6250 5280 30  0001 C CNN
+F 2 "" H 6250 5350 60  0000 C CNN
+F 3 "" H 6250 5350 60  0000 C CNN
+	1    6250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP3
+U 1 1 54D1AA8D
+P 6250 4950
+AR Path="/54D68586/54D1AA8D" Ref="JP3"  Part="1" 
+AR Path="/54D67EDE/54D1AA8D" Ref="JP4"  Part="1" 
+F 0 "JP4" H 6250 5100 60  0000 C CNN
+F 1 "JUMPER" H 6250 4870 40  0000 C CNN
+F 2 "SM0402" H 6250 4950 60  0001 C CNN
+F 3 "~" H 6250 4950 60  0000 C CNN
+	1    6250 4950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3350 3450
+Wire Wire Line
+	3200 3450 3200 3350
+Connection ~ 3350 3950
+Wire Wire Line
+	5400 4450 6150 4450
+Wire Wire Line
+	5400 4350 6400 4350
+Wire Wire Line
+	3250 4550 3500 4550
+Wire Wire Line
+	3500 4400 3500 4350
+Wire Wire Line
+	3250 4400 3500 4400
+Wire Wire Line
+	3250 4250 3500 4250
+Wire Wire Line
+	3350 4150 3500 4150
+Wire Wire Line
+	3350 3450 3350 4150
+Wire Wire Line
+	3500 3950 3350 3950
+Wire Wire Line
+	5500 4050 5500 4100
+Wire Wire Line
+	5400 4050 5500 4050
+Wire Wire Line
+	5000 3450 5400 3450
+Wire Wire Line
+	3200 3450 3900 3450
+Connection ~ 4450 3450
+Wire Wire Line
+	4300 3450 4600 3450
+Wire Wire Line
+	4450 3600 4450 3450
+Wire Wire Line
+	5400 3450 5400 3950
+Wire Wire Line
+	5400 3850 5550 3850
+Connection ~ 5400 3850
+Wire Wire Line
+	6150 4450 6150 4550
+Wire Wire Line
+	6150 4550 6550 4550
+Wire Wire Line
+	6250 5350 6250 5250
+Wire Wire Line
+	6250 4650 6250 4550
+Connection ~ 6250 4550
+Text HLabel 3250 4250 0    60   Input ~ 0
+SCK
+Text HLabel 3250 4400 0    60   Input ~ 0
+SDO
+Text HLabel 3250 4550 0    60   Input ~ 0
+CNV
+Text HLabel 5550 3850 2    60   Input ~ 0
+VDD
+Text HLabel 5800 4550 2    60   Input ~ 0
+REF
+Wire Wire Line
+	5400 4550 5800 4550
+$Comp
+L BNC P13
+U 1 1 54D67881
+P 6550 4350
+AR Path="/54D68586/54D67881" Ref="P13"  Part="1" 
+AR Path="/54D67EDE/54D67881" Ref="P14"  Part="1" 
+F 0 "P14" H 6560 4470 60  0000 C CNN
+F 1 "BNC" V 6660 4290 40  0000 C CNN
+F 2 "~" H 6550 4350 60  0000 C CNN
+F 3 "~" H 6550 4350 60  0000 C CNN
+	1    6550 4350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
